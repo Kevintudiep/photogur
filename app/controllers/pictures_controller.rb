@@ -15,7 +15,7 @@ class PicturesController < ApplicationController
     @picture = Picture.new
 
     @picture.title = params[:picture][:title]
-    @picture.artist = params[:picture][:title]
+    @picture.artist = params[:picture][:artist]
     @picture.url = params[:picture][:url]
 
     if @picture.save
