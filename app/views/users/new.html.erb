@@ -1,0 +1,24 @@
+<h2>New User</h2>
+
+<%= link_to "Back to Photogur", root_path %>
+
+<%= form_for @user do |t| %>
+  <div>
+    <%= t.label :email  %>
+    <%= t.text_field :email %>
+  </div>
+
+  <div>
+    <%= t.label :password %>
+    <%= t.password_field :password %>
+  </div>
+
+  <div>
+    <%= t.label :password_confirmation  %>
+    <%= t.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= t.submit %>
+  </div>
+<% end %>
